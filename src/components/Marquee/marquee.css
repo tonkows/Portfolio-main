@@ -1,0 +1,29 @@
+.marquee-container {
+  justify-content: center; /* จัดข้อความให้อยู่ตรงกลางแนวนอน */
+  align-items: center; /* จัดข้อความให้อยู่ตรงกลางแนวตั้ง */
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee-text {
+  font-size: 3rem; /* ขนาดตัวอักษรใหญ่ */
+  font-weight: bold; /* ฟอนต์หนา */
+  -webkit-text-stroke: 2px rgb(128, 128, 128); /* เพิ่มขอบ */
+  color: transparent; /* ทำให้โปร่งตรงกลาง */
+  text-transform: uppercase; /* ตัวพิมพ์ใหญ่ */
+  letter-spacing: 0.1rem; /* เพิ่มระยะห่างระหว่างตัวอักษร */
+  text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+}
+
+/* ปรับสำหรับหน้าจอขนาดเล็ก */
+@media (max-width: 768px) {
+  .marquee-text {
+    font-size: 1.5rem; /* ลดขนาดตัวอักษรสำหรับแท็บเล็ต */
+  }
+}
+
+@media (max-width: 480px) {
+  .marquee-text {
+    font-size: 1rem; /* ลดขนาดตัวอักษรสำหรับหน้าจอมือถือ */
+  }
+}

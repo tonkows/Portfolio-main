@@ -1,0 +1,127 @@
+/* Base styles for the sidebar */
+.aside {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: linear-gradient(
+    45deg,
+    #000000,
+    #000000
+  ); /* เพิ่ม gradient ให้พื้นหลังดูมีมิติ */
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 2.5em;
+  width: 110px;
+  transition: width 0.3s ease-in-out;
+  z-index: 1000; /* Ensure sidebar stays on top */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh; /* ให้ sidebar สูงเต็มหน้าจอ */
+}
+
+/* Adjust the content area to avoid overlap */
+body {
+  margin-left: 110px; /* Adjust this value to match the sidebar's width */
+  transition: margin-left 0.3s ease-in-out; /* Smooth transition when sidebar collapses */
+}
+
+.nav__list {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* เพิ่มระยะห่างระหว่างไอคอน */
+  align-items: center;
+}
+
+/* Styles for the sidebar when collapsed */
+.aside.collapsed {
+  width: 60px;
+  padding: 2.5em 0;
+}
+
+.aside.collapsed .nav__list {
+  align-items: center;
+}
+
+.aside.collapsed .nav__footer {
+  display: none;
+}
+
+/* Adjust content margin when sidebar is collapsed */
+body.aside-collapsed {
+  margin-left: 60px; /* Adjust this value to match the collapsed sidebar's width */
+}
+
+.nav__link {
+  text-decoration: none;
+  color: white; /* เพิ่มสีขาวให้ไอคอนและลิงก์ */
+  align-items: center;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.nav__link:hover {
+  color: #ffcccc; /* เพิ่มเอฟเฟกต์ hover ให้ลิงก์ */
+}
+
+.nav__icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Icon-only styles when collapsed */
+.aside.collapsed .nav__link {
+  font-size: 2rem;
+}
+
+.aside.collapsed .nav__icon {
+  font-size: 1.8rem;
+}
+
+.FLname {
+  color: white;
+  font-size: 1rem;
+  transform: rotate(-180deg);
+  writing-mode: vertical-rl;
+  margin-top: 10rem;
+  opacity: 0.7; /* ทำให้ข้อความจางลง */
+}
+
+.aside.collapsed .FLname {
+  display: none; /* Hide the name when collapsed */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .aside {
+    width: 60px;
+  }
+
+  body {
+    margin-left: 60px;
+  }
+
+  .FLname {
+    display: none;
+  }
+}
+
+/* Add this to sidebar.css */
+.sidebar__toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  color: white;
+}
+
+.sidebar__toggle:focus {
+  outline: none;
+}
+
+.aside.collapsed .sidebar__toggle {
+  display: block;
+}

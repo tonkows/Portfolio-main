@@ -1,0 +1,43 @@
+.project-heading {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.purple {
+  color: #c084f5;
+}
+
+.github-calendar-container {
+  width: 100%;
+  overflow-x: hidden; /* ป้องกันการเลื่อนแนวนอน */
+}
+
+.calendar-container {
+  display: flex;
+  justify-content: center; /* จัดให้อยู่ตรงกลาง */
+  overflow-x: hidden; /* ป้องกันการเลื่อนแนวนอน */
+}
+
+@media (max-width: 768px) {
+  .project-heading {
+    font-size: 1.5rem;
+  }
+
+  .calendar-container svg {
+    width: 90%; /* ลดขนาดของปฏิทินสำหรับหน้าจอขนาดกลาง */
+    height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .project-heading {
+    font-size: 1.25rem;
+  }
+
+  .calendar-container svg {
+    width: 80%; /* ลดขนาดของปฏิทินสำหรับหน้าจอขนาดเล็ก */
+    height: auto;
+  }
+}

@@ -1,0 +1,68 @@
+const Data = [
+  {
+    id: 1,
+    category: "education",
+    icon: "icon-graduation",
+    year: "2025",
+    title: "System Analyst Internship",
+    desc: "Completed a 4-month internship as a System Analyst, contributing to real-world projects in a dynamic environment,Developed a Widget Management POC using React.js, Ant Design (AntD) for UI components, and Chart.js for interactive data visualization.Designed Business Flow diagrams, Use Case diagrams, Data Dictionary, and API Specifications to support system analysis and development.",
+  },
+  {
+    id: 1,
+    category: "education",
+    icon: "icon-graduation",
+    year: "2024 ",
+    title: "Project Advisor System",
+    desc: "Designed and developed a web-based platform to streamline communication between advisors and students, covering key academic processes such as appointment scheduling, document tracking, and progress monitoring. Implemented using PHP with phpMyAdmin, HTML, CSS, and JavaScript.",
+  },
+  {
+    id: 2,
+    category: "education",
+    icon: "icon-graduation",
+    year: "2024",
+    title: "LINE Dev Camp",
+    desc: "Participated in a hands-on workshop, learning to develop LINE Chatbots, utilize the LINE Messaging API, and integrate LINE with organizational systems, while enhancing development skills within the LINE Developer Ecosystem.",
+  },
+  {
+    id: 3,
+    category: "education",
+    icon: "icon-graduation",
+    year: "2024",
+    title: "Web Portfolio",
+    desc: "Developed a personal web portfolio showcasing various projects using React, CSS, HTML, and JavaScript.",
+  },
+  {
+    id: 4,
+    category: "experience",
+    icon: "icon-graduation",
+    year: "2023",
+    title: "Mini project Game programming",
+    desc: "Create an action-adventure 3D game using the Unity program.",
+  },
+  {
+    id: 5,
+    category: "experience",
+    icon: "icon-graduation",
+    year: "2023",
+    title: "Mini project Fundamentals of Database Systems",
+    desc: "Create a technology system for streaming video platforms.",
+  },
+  {
+    id: 6,
+    category: "experience",
+    icon: "icon-graduation",
+    year: "2023",
+    title: "Mini project System Analysis and Design",
+    desc: "System to promote drinking water.",
+  },
+  {
+    id: 9,
+    category: "experience",
+    icon: "icon-graduation",
+    year: "2022",
+    title: "Mini project software Construction",
+    desc: "Create a program to calculate the water bill in the dormitory using the JAVA languages.",
+  },
+];
+
+export default Data;

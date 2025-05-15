@@ -1,0 +1,131 @@
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.project-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  width: 320px; /* Default width */
+  color: #000000;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease; /* Smooth transition for resizing */
+}
+
+/* When screen width is 768px or smaller (tablets) */
+@media (max-width: 768px) {
+  .project-card {
+    width: 90%; /* Make the card width larger (90% of container) */
+  }
+}
+
+/* When screen width is 480px or smaller (mobile phones) */
+@media (max-width: 480px) {
+  .project-card {
+    width: 100%; /* Make the card take full width on smaller screens */
+    padding: 25px; /* Add some extra padding for larger touch targets */
+  }
+}
+
+.project-image img {
+  width: 80%;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 15px;
+}
+
+.project-content h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.project-content p {
+  font-size: 16px;
+  color: #444242;
+  margin-bottom: 15px;
+}
+
+.tech-stack {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.tech-item {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  border: 1px solid #000000;
+  transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+.project-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.demo-btn {
+  background-color: #000000;
+  color: #ffffff; /* สีของข้อความและไอคอน */
+  padding: 10px 20px;
+  border: 1px solid transparent; /* ขอบโปร่งแสง */
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s, border 0.3s;
+  display: flex; /* แสดงไอคอนและข้อความในบรรทัดเดียวกัน */
+  align-items: center; /* จัดตำแหน่งไอคอนและข้อความให้อยู่ตรงกลาง */
+  gap: 0; /* เพิ่มช่องว่างระหว่างไอคอนและข้อความ */
+}
+
+.demo-btn:hover {
+  background-color: #a29e9e; /* เปลี่ยนสีพื้นหลังเมื่อ hover */
+  border-color: #ffffff; /* เปลี่ยนสีขอบเมื่อ hover */
+  color: #ffffff; /* เปลี่ยนสีข้อความเมื่อ hover */
+}
+
+.demo-btn a {
+  text-decoration: none;
+  color: inherit; /* ทำให้สีของลิงก์สอดคล้องกับปุ่ม */
+}
+
+/* ปุ่ม GitHub */
+.github-btn {
+  background-color: #000000;
+  color: #ffffff; /* สีของข้อความและไอคอน */
+  padding: 10px 20px;
+  border: 1px solid transparent; /* ขอบโปร่งแสง */
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s, border 0.3s;
+  display: flex; /* แสดงไอคอนและข้อความในบรรทัดเดียวกัน */
+  align-items: center; /* จัดตำแหน่งไอคอนและข้อความให้อยู่ตรงกลาง */
+  gap: 0; /* เพิ่มช่องว่างระหว่างไอคอนและข้อความ */
+}
+
+.github-btn:hover {
+  background-color: #a29e9e; /* เปลี่ยนสีพื้นหลังเมื่อ hover */
+  border-color: #ffffff; /* เปลี่ยนสีขอบเมื่อ hover */
+  color: #ffffff; /* เปลี่ยนสีข้อความเมื่อ hover */
+}
+
+.github-btn a {
+  text-decoration: none;
+  color: inherit; /* ทำให้สีของลิงก์สอดคล้องกับปุ่ม */
+}

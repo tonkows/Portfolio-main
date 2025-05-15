@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
+
+:root {
+  --first-color: hsl(353, 100%, 65%);
+  --title-color: hsl(0, 0%, 100%);
+  --text-color: hsl(244, 16%, 43%);
+  --body-color: #202124;
+  --container-color: #fff;
+
+  --body-font: "Rubik", sans-serif;
+  --h1-font-size: 2.25rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.875rem;
+  --smaller-font-size: 0.813rem;
+
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+
+  --shadow: 0px 5px 20px 0px rgb(69 67 96 / 10%);
+
+  --border-radius: 20px;
+}
+
+body {
+  background-color: black; /* พื้นหลังสีดำเพื่อความคมชัด */
+  color: white;
+  font-family: var(--body-font);
+  overflow-x: hidden;
+}
+
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro {
+  text-align: center;
+  padding: 0 1rem; /* Add padding for better responsiveness */
+}
+
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.portfolio-text {
+  font-size: 6rem; /* ขนาดตัวอักษรใหญ่ */
+  font-weight: bold;
+  line-height: 0.9; /* ลดระยะห่างระหว่างบรรทัด */
+  text-align: center; /* จัดข้อความให้อยู่กึ่งกลาง */
+  color: white; /* สีขาว */
+  font-weight: bold; /* ฟอนต์หนา */
+  -webkit-text-stroke: 2px white; /* เพิ่มขอบสีขาว */
+  color: transparent; /* ทำให้โปร่งตรงกลาง */
+  text-transform: uppercase; /* ตัวพิมพ์ใหญ่ */
+  letter-spacing: 0.1rem; /* เพิ่มระยะห่างระหว่างตัวอักษร */
+}
+
+.text-line {
+  display: block;
+  animation: slideIn 1.5s ease-out; /* เพิ่มแอนิเมชันให้แต่ละบรรทัด */
+}
+
+.name__home {
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-bold);
+  margin-bottom: 0.5rem;
+  animation: fadeIn 2s ease-out;
+}
+
+.home__education {
+  font-size: var(--normal-font-size);
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+}
+
+.Aboutme_btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #f9edd1;
+  color: #000000;
+  font-size: var(--normal-font-size);
+  font-weight: bold;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.Aboutme_btn:hover {
+  background-color: var(--first-color-alt);
+  transform: translateY(-3px);
+}
+.scroll__down {
+  position: absolute;
+  bottom: 5rem; /* ปรับระยะห่างจากด้านล่างของหน้าจอ */
+  left: 50%;
+  transform: translateX(-60%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.scroll__down:hover {
+  opacity: 1;
+}
+.scroll__down span {
+  font-size: var(--small-font-size);
+  color: var(--title-color);
+  margin-top: 0.5rem;
+}
+.mouse {
+  border: 2px solid #ffffff;
+  display: block;
+  height: 2rem;
+  width: 1.25rem;
+  margin: auto;
+  border-radius: 1rem;
+  position: relative;
+}
+
+@keyframes ani-mouse {
+  0% {
+    top: 20%;
+  }
+  15% {
+    top: 50%;
+  }
+  50% {
+    top: 50%;
+  }
+  100% {
+    top: 29%;
+  }
+}
+
+.wheel {
+  background-color: #ffffff;
+  border-radius: 100%;
+  width: 0.2rem;
+  height: 0.2rem;
+  position: absolute;
+  top: 0.4rem; /* ปรับ top เพื่อให้อยู่ตรงกลางพอดี */
+  left: 50%;
+  transform: translate(-60%); /* ปรับตำแหน่งให้ตรงกลางพอดี */
+  animation: ani-mouse 2s linear infinite;
+}
+.mouse__wrapper {
+  text-decoration: none;
+}
+
+.mouse__wrapper:hover {
+  opacity: 1;
+}
+.home__socials {
+  display: flex;
+  column-gap: 2em;
+  margin: 2rem 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.home__social-link {
+  color: #ffffff;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+
+.home__social-link:hover {
+  color: hsl(43, 100%, 68%);
+}
+
+/* เพิ่มที่ root เพื่อให้มีการเคลื่อนไหวในเว็บ */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* ขยับลงก่อน */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* กลับมาที่ตำแหน่งเดิม */
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .portfolio-text {
+    font-size: 4rem; /* ขนาดตัวอักษรที่เล็กลงสำหรับหน้าจอมือถือ */
+  }
+
+  .name__home {
+    font-size: var(--h2-font-size);
+  }
+
+  .home__education {
+    font-size: var(--normal-font-size);
+  }
+
+  .btn {
+    padding: 0.5rem 1.5rem; /* Adjust button padding */
+    font-size: var(--normal-font-size); /* Adjust button font size */
+  }
+}
