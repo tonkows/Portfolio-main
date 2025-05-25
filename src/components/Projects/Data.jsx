@@ -1,16 +1,13 @@
 // src/components/Data.jsx
 import gameImage from "../../assets/2.png";
 import resumeImage from "../../assets/1.png";
-import sukiImage from "../../assets/teenoi.png";
 import database from "../../assets/database.png";
 import dbPDF from "/assets/Video Streaming.pdf";
 import SA from "../../assets/SA.png";
 import saPDF from "/assets/sa.pdf";
 import LINE from "../../assets/Line Dev Camp.png";
-import water from "../../assets/water.png";
 import Datasci from "../../assets/datasci.png";
 import Data from "/assets/World Happiness Report 2015-2019 - Jupyter Notebook.pdf";
-import DataP from "/assets/World Happiness Report 2015-2019 present.pdf";
 import POC from "../../assets/POC.jpg";
 
 const projects = [
