@@ -23,7 +23,7 @@ const About = () => {
               I’m highly interested in pursuing a career as a System Analyst or Web Developer, where I can apply my skills and experience to contribute to the success and growth of the organization.
             </p>
             <a
-              href="/assets/Resume.pdf"
+              href="/assets/Resume_Kanittha.pdf"
               className="RS_btn"
               target="_blank"
               rel="noopener noreferrer"
