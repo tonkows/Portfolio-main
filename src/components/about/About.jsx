@@ -22,12 +22,8 @@ const About = () => {
               During my internship as a System Analyst, I engaged in real-world business processes and collaborated with development teams to design effective solutions. 
               I’m highly interested in pursuing a career as a System Analyst or Web Developer, where I can apply my skills and experience to contribute to the success and growth of the organization.
             </p>
-            <a href="/assets/CVKanitthaS..pdf" className="CV_btn"target="_blank"
-              rel="noopener noreferrer">
-              CV
-            </a>
             <a
-              href="/assets/Resume_KanitthaS..pdf"
+              href="/assets/Resume_Kanittha.pdf"
               className="RS_btn"
               target="_blank"
               rel="noopener noreferrer"
