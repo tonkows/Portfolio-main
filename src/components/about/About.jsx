@@ -12,7 +12,6 @@ const About = () => {
       <div className="about__container grid">
         <div className="about__img-container">
           <img src={Image} alt="Profile Image" className="about__img" />
-          <div className="about__img-text">KANITTHA SOMBOON</div>
         </div>
 
         <div className="about__data grid">

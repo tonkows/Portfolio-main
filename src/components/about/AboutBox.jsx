@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import "./aboutBox.css";
 
 const AboutBox = () => {
@@ -23,7 +23,7 @@ const AboutBox = () => {
         threshold: 0.1, 
       }
     );
-
+    
     boxes.forEach((box) => {
       observer.observe(box);
     });
