@@ -30,7 +30,7 @@ const About = () => {
              Resume
             </a>
             <a
-              href="/assets/Transcript.pdf"
+              href="/assets/transcript_.pdf"
               className="TS_btn"
               target="_blank"
               rel="noopener noreferrer"
