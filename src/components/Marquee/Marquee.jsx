@@ -11,7 +11,7 @@ const Marquee = () => {
   return (
     <div className="marquee-container" data-aos="fade-down" data-aos-easing="ease-out-quart">
       <div className="marquee-text" data-aos="fade-out" data-aos-anchor-placement="top-bottom">
-      Recent Graduate Computer Science.
+       Computer Science.
       </div>
     </div>
   );

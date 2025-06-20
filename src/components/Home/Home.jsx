@@ -10,25 +10,27 @@ const Home = () => {
       ".Welcome__Home, .name__home, .btn"
     );
 
-    // ตั้งค่าการเคลื่อนไหวตอนโหลดหน้า
-    elements.forEach((element) => {
-      element.style.opacity = "0";
-      element.style.transform = "translateY(20px)";
+    // Initial state
+    elements.forEach((el) => {
+      el.style.opacity = "0";
+      el.style.transform = "translateY(20px)";
     });
 
+    // Sequential animation on load
     setTimeout(() => {
-      elements.forEach((element, index) => {
+      elements.forEach((el, i) => {
         setTimeout(() => {
-          element.style.transition = "all 0.5s ease-out";
-          element.style.opacity = "1";
-          element.style.transform = "translateY(0)";
-        }, index * 200);
+          el.style.transition = "all 0.5s ease-out";
+          el.style.opacity = "1";
+          el.style.transform = "translateY(0)";
+        }, i * 200);
       });
     }, 500);
 
-    // ตั้งค่าการเคลื่อนไหวเมื่อ scroll ด้วย IntersectionObserver
+    // IntersectionObserver for scroll animation
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
+        entry.target.style.transition = "all 0.5s ease-out";
         if (entry.isIntersecting) {
           entry.target.style.opacity = "1";
           entry.target.style.transform = "translateY(0)";
@@ -39,14 +41,10 @@ const Home = () => {
       });
     });
 
-    elements.forEach((element) => {
-      observer.observe(element);
-    });
+    elements.forEach((el) => observer.observe(el));
 
     return () => {
-      elements.forEach((element) => {
-        observer.unobserve(element);
-      });
+      elements.forEach((el) => observer.unobserve(el));
     };
   }, []);
 
@@ -56,14 +54,18 @@ const Home = () => {
         <div className="portfolio-container">
           <div className="portfolio-text Welcome__Home">
             <span className="text-line">WEB</span>
-            <span className="text-line">PORTFOLIO</span>
+            <span className="text-line highlight">PORTFOLIO</span>
           </div>
         </div>
 
         <h1 className="name__home">Kanittha Somboon</h1>
-        <HeaderSocial />
 
+        <HeaderSocial />
         <ScrollDown />
+        <div className="background-lines">
+  {/* Intro Content */}
+</div>
+
       </div>
     </section>
   );
