@@ -30,7 +30,7 @@ const About = () => {
              Resume Eng
             </a>
              <a
-              href="/assets/Resume_thai.pdf"
+              href="/assets/Resume_Kanittha_thai.pdf"
               className="RS_btn"
               target="_blank"
               rel="noopener noreferrer"
